@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fatec Mococa</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+  <h2>Trabalho de SI</h2>
+  <form id="login-form">
+
+    <div class="form-group">
+      <label for="username" >Login:</label>
+
+      <input type="text" id="username" name="username" autocomplete="off" required>
+
+    </div>
+    <div class="form-group">
+      <label for="password">Senha:</label>
+
+      <input type="password" id="password" name="password" required>
+
+
+      <div id="message"></div>
+    </div>
+    <p> <button type="submit">Login</button> </p>
+
+    <p> <button id="openModalButton" class="cadastrar-button"> Cadastrar </button> </p>
+ 
+
+    <p> <button type="submit-esqueceu" class="esqueceu-button"> Esqueceu a senha? </button></p>
+
+    
+
+   
+   
+    
+
+  </form>
+  
+</div>
+
+<!-- Modal para redefinição de senha -->
+<div id="customModal" class="custom-modal">
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <h2>Redefinir Senha</h2> 
+    <label> Complete ou Responda </label>
+    
+    <label for="frase" id="fraseLabel"></label><br>
+    <label for="frase" id="emailLabel"></label><br>
+    
+    <!-- Campo para a resposta da frase de apoio -->
+    <label for="respostaFrase">Resposta da frase de apoio:</label><br>
+    <input type="text" id="respostaFrase" name="respostaFrase" autocomplete="off" required><br>
+
+    <!-- Campo para a resposta para completar email -->
+    <label for="respostaEmail">Complete o email:</label><br>
+    <input type="email" id="respostaEmail" name="respostaEmail" autocomplete="off" required><br>
+
+
+    <!-- Botão de confirmação -->
+    <button id="confirmar">Confirmar</button>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Cadastro de Usuário</h2>
+    <form id="signup-form">
+
+      <P><label for="new-username">Novo Usuário:</label></P>
+
+      <input type="text" id="new-username" name="new-username" autocomplete="off" required>
+
+      <P><label for="new-password">Senha:</label></P>
+
+      <P> <input type="password" id="new-password" name="new-password" required> </p>
+       
+      <P><label for="new-password2">Confirmar Senha:</label></P>
+
+      <P> <input type="password" id="new-password2" name="new-password2" required> </p>
+        
+      <P><label for="frase_apoio">Frase de apoio para mudanca de senha:</label></P>
+
+      <P> <input type="text" id="frase_apoio" name="frase_apoio" autocomplete="off" required> </p> 
+     
+      <P><label for="frase_resposta">Resposta da frase de apoio:</label></P>
+
+      <P> <input type="password" id="frase_resposta" name="frase_resposta" autocomplete="off" required> </p>  
+
+      <P><label for="frase_resposta">Email:</label></P>
+
+      <P> <input type="email" id="email" name="email" autocomplete="off" required> </p>  
+
+      <button type="submit" class="submit-button">Cadastrar</button>
+      
+    </form>
+  </div>
+</div>
+
+
+<script src="js/script.js" defer>
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

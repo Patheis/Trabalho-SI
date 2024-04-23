@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, sans-serif, bold;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  max-width: 200px;
+   font-size: 14px;
+   
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  max-width: 500px;
+  
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cadastrar-button {
+  padding: 10px 20px;
+  background-color: #28a745; 
+  color: #fff; 
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cadastrar-button:hover {
+  background-color: #218838; 
+}
+
+.lista-button {
+  padding: 10px 20px;
+  background-color: #661010; 
+  color: #fff; 
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lista-button:hover {
+  background-color: #420404; 
+}
+
+
+.esqueceu-button {
+  padding: 10px 20px;
+  background-color: #5900e7; 
+  color: #fff; 
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.esqueceu-button:hover {
+  background-color: #882188; 
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: red;
+  font-size:20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilos do Modal ADMIN */
+#adminSenhaModal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#adminSenhaModal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centraliza verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; /* Defina a largura do modal como 70% da largura da tela */
+  max-width: 400px; /* Defina a largura máxima do modal */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+#adminSenhaModal .modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#adminSenhaModal .modal-content input {
+  width: calc(100% - 20px); /* Ajusta a largura do input */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#adminSenhaModal .modal-content button {
+  max-width: 200px; /* Defina a largura máxima desejada para o botão */
+  margin-top: 10px;
+}
+
+#adminSenhaModal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#adminSenhaModal .close:hover,
+#adminSenhaModal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Estilos do Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centraliza verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; /* Defina a largura do modal como 70% da largura da tela */
+  max-width: 400px; /* Defina a largura máxima do modal */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  width: calc(100% - 20px); /* Ajusta a largura do input */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  max-width: 200px; /* Defina a largura máxima desejada para o botão */
+  margin-top: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos CSS para o modal */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
